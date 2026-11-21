@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VARKA — обжарочная кофейня в Минске</title>
+<meta name="description" content="VARKA — обжарочная кофейня в Минске. Своя обжарка, фильтр, эспрессо и десерты. С 2016 года.">
+<meta name="theme-color" content="#f4eadd">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f1611'/%3E%3Cellipse cx='16' cy='16' rx='7' ry='10' transform='rotate(-28 16 16)' fill='%23d9a45f'/%3E%3Cpath d='M16 6.5c-3 4-3 15 0 19' stroke='%231f1611' stroke-width='1.6' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#menu">Перейти к меню</a>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="VARKA — в начало страницы">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="40" height="40">
+          <circle cx="20" cy="20" r="19" fill="#1f1611"/>
+          <ellipse cx="20" cy="20" rx="8" ry="11.5" transform="rotate(-28 20 20)" fill="#d9a45f"/>
+          <path d="M20 8.6c-3.4 4.6-3.4 18 0 22.8" stroke="#1f1611" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="logo-text">
+        <strong>VARKA</strong>
+        <em>coffee roasters</em>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#roast">Обжарка</a>
+      <a href="#vibe">Атмосфера</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-dark btn-sm" href="#booking">Забронировать стол</a>
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> обжарочная кофейня · Минск</p>
+        <h1 id="hero-title">Кофе, сваренный<br><em>с характером</em></h1>
+        <p class="lead">
+          Обжариваем зерно сами, варим медленно и наливаем с уважением к тому,
+          кто держит чашку. Заходите за своим — свежая партия всегда на полке.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">Смотреть меню</a>
+          <a class="btn btn-ghost" href="#booking">Забронировать стол</a>
+        </div>
+        <ul class="hero-facts">
+          <li><span class="stars" aria-hidden="true">★★★★★</span> <span>4,9 · 380 отзывов</span></li>
+          <li>Пн–Пт до 22:00</li>
+          <li>Обжарка по средам</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="badge-rotate" aria-hidden="true">
+          <svg viewBox="0 0 160 160" width="160" height="160">
+            <defs>
+              <path id="badge-circle" d="M80,80 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0"/>
+            </defs>
+            <circle cx="80" cy="80" r="70" fill="#fbf5ec" opacity=".92"/>
+            <circle cx="80" cy="80" r="70" fill="none" stroke="#c05f35" stroke-opacity=".35"/>
+            <text class="badge-text">
+              <textPath href="#badge-circle" startOffset="0">СВЕЖАЯ ОБЖАРКА · КАЖДУЮ НЕДЕЛЮ</textPath>
+            </text>
+            <g transform="translate(80 80) rotate(-22)">
+              <ellipse rx="9.5" ry="14" fill="#c05f35"/>
+              <path d="M0-14c-3.4 5.4-3.4 22.6 0 28" stroke="#fbf5ec" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+
+        <svg class="cup" viewBox="0 0 520 560" role="img" aria-label="Иллюстрация: чашка кофе с паром">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="#fffaf0"/>
+              <stop offset="68%" stop-color="#f0ddc2"/>
+              <stop offset="100%" stop-color="#e4cba6"/>
+            </radialGradient>
+            <linearGradient id="cupBody" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#fffefb"/>
+              <stop offset="55%" stop-color="#f7ebd9"/>
+              <stop offset="100%" stop-color="#e7d3b7"/>
+            </linearGradient>
+            <linearGradient id="crema" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#b8723a"/>
+              <stop offset="45%" stop-color="#d99a5c"/>
+              <stop offset="100%" stop-color="#a96330"/>
+            </linearGradient>
+            <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+              <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#2b1b12" flood-opacity=".18"/>
+            </filter>
+          </defs>
+
+          <circle cx="260" cy="272" r="212" fill="url(#glow)"/>
+          <circle cx="260" cy="272" r="212" fill="none" stroke="#c9a97f" stroke-opacity=".35"/>
+          <circle cx="260" cy="272" r="182" fill="none" stroke="#c9a97f" stroke-opacity=".25" stroke-dasharray="3 9"/>
+
+          <!-- пар -->
+          <g class="steam" stroke="#a98363" stroke-width="6" stroke-linecap="round" fill="none" opacity=".55">
+            <path d="M214 232c-14-22 10-38-2-58s-2-38 6-48"/>
+            <path d="M260 224c-16-26 12-42-2-64s-2-40 8-52"/>
+            <path d="M306 232c-12-22 12-38 0-58s0-38 8-48"/>
+          </g>
+
+          <!-- блюдце -->
+          <ellipse cx="260" cy="492" rx="148" ry="16" fill="#7b4a2c" opacity=".10"/>
+          <ellipse cx="260" cy="470" rx="172" ry="32" fill="#e9d7c0"/>
+          <ellipse cx="260" cy="464" rx="152" ry="25" fill="#f8efe2"/>
+          <ellipse cx="260" cy="462" rx="112" ry="16" fill="#efe0cb"/>
+
+          <!-- ручка -->
+          <path d="M348 330c52-6 60 66 4 76" fill="none" stroke="#f3e5d1" stroke-width="24" stroke-linecap="round"/>
+          <path d="M348 330c52-6 60 66 4 76" fill="none" stroke="#ddc7ab" stroke-width="24" stroke-linecap="round" opacity=".35"/>
+
+          <!-- чашка -->
+          <path d="M172 300H348L334 428a34 34 0 0 1-34 30h-80a34 34 0 0 1-34-30Z"
+                fill="url(#cupBody)" stroke="#d9bd9b" stroke-width="2" filter="url(#soft)"/>
+
+          <!-- крема -->
+          <ellipse cx="260" cy="300" rx="88" ry="23" fill="url(#crema)"/>
+          <ellipse cx="248" cy="297" rx="54" ry="13" fill="#e7b986" opacity=".75"/>
+          <ellipse cx="260" cy="300" rx="78" ry="17" fill="none" stroke="#8d5228" stroke-opacity=".35" stroke-width="2"/>
+          <ellipse cx="260" cy="300" rx="88" ry="23" fill="none" stroke="#fbf3e7" stroke-width="9"/>
+
+          <!-- зёрна -->
+          <g fill="#7b4a2c">
+            <g transform="translate(112 402) rotate(-24)">
+              <ellipse rx="17" ry="11"/>
+              <path d="M-17 0c6 5 22 5 34 0" stroke="#e3c6a4" stroke-width="2.4" fill="none" opacity=".55"/>
+            </g>
+            <g transform="translate(410 388) rotate(32)">
+              <ellipse rx="15" ry="10"/>
+              <path d="M-15 0c6 5 20 5 30 0" stroke="#e3c6a4" stroke-width="2.2" fill="none" opacity=".55"/>
+            </g>
+            <g transform="translate(392 486) rotate(-12)">
+              <ellipse rx="12" ry="8"/>
+              <path d="M-12 0c5 4 16 4 24 0" stroke="#e3c6a4" stroke-width="2" fill="none" opacity=".55"/>
+            </g>
+          </g>
+        </svg>
+
+        <div class="hero-card">
+          <p class="hero-card-label">Сегодня в фильтре</p>
+          <p class="hero-card-name">Эфиопия Гуджи</p>
+          <p class="hero-card-notes">абрикос · жасмин · чёрный чай</p>
+          <span class="chip">новый лот</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>свежая обжарка</span><i>✦</i><span>ручная варка</span><i>✦</i><span>фильтр V60</span><i>✦</i>
+      <span>эспрессо</span><i>✦</i><span>свои десерты</span><i>✦</i><span>с 2016 года</span><i>✦</i>
+      <span>свежая обжарка</span><i>✦</i><span>ручная варка</span><i>✦</i><span>фильтр V60</span><i>✦</i>
+      <span>эспрессо</span><i>✦</i><span>свои десерты</span><i>✦</i><span>с 2016 года</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ================= MENU ================= -->
+  <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">меню</p>
+        <h2 id="menu-title">Коротко <em>и по делу</em></h2>
+        <p class="section-sub">Всё, что мы умеем делать хорошо. Если сомневаетесь — спросите бариста, он расскажет больше, чем это меню.</p>
+      </header>
+
+      <div class="menu-tabs reveal" role="tablist" aria-label="Разделы меню">
+        <button class="tab is-active" id="tab-coffee" role="tab" aria-selected="true" aria-controls="panel-coffee" data-tab="coffee">Кофе</button>
+        <button class="tab" id="tab-other" role="tab" aria-selected="false" aria-controls="panel-other" data-tab="other" tabindex="-1">Не кофе</button>
+        <button class="tab" id="tab-beans" role="tab" aria-selected="false" aria-controls="panel-beans" data-tab="beans" tabindex="-1">К зерну</button>
+      </div>
+
+      <div class="menu-panels reveal">
+
+        <div class="menu-panel is-active" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee" tabindex="0">
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-line"><h3>Эспрессо</h3><span class="dots" aria-hidden="true"></span><span class="price">3,5 <small>BYN</small></span></div>
+              <p>Плотный, ореховый, короткий. Для тех, кто знает, зачем пришёл.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Капучино <span class="tag">хит</span></h3><span class="dots" aria-hidden="true"></span><span class="price">5,0 <small>BYN</small></span></div>
+              <p>Бархатная пенка, 180 мл. Сахар — по запросу, не по умолчанию.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Флэт уайт</h3><span class="dots" aria-hidden="true"></span><span class="price">5,5 <small>BYN</small></span></div>
+              <p>Двойное эспрессо и молоко, взбитое до глянца.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Фильтр V60 <span class="tag tag-new">новинка</span></h3><span class="dots" aria-hidden="true"></span><span class="price">6,5 <small>BYN</small></span></div>
+              <p>Эфиопия Гуджи: абрикос, жасмин, чайное послевкусие.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Кортадо</h3><span class="dots" aria-hidden="true"></span><span class="price">4,5 <small>BYN</small></span></div>
+              <p>Эспрессо с каплей молока — на один глоток вдохновения.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Раф лавандовый</h3><span class="dots" aria-hidden="true"></span><span class="price">6,0 <small>BYN</small></span></div>
+              <p>Сливки, лаванда, немного мёда. Мягко и совсем не приторно.</p>
+            </article>
+          </div>
+          <p class="menu-note">Альтернативное молоко +1,5 · свой стакан −0,5 · вечером фильтр дешевле на 1 BYN</p>
+        </div>
+
+        <div class="menu-panel" id="panel-other" role="tabpanel" aria-labelledby="tab-other" tabindex="0" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-line"><h3>Матча-латте</h3><span class="dots" aria-hidden="true"></span><span class="price">6,5 <small>BYN</small></span></div>
+              <p>Церемониальная матча, взбитая вручную. Без сахара.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Какао на молоке</h3><span class="dots" aria-hidden="true"></span><span class="price">5,5 <small>BYN</small></span></div>
+              <p>Тёмный шоколад 70%, без сахарного сиропа.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Облепиховый чай</h3><span class="dots" aria-hidden="true"></span><span class="price">5,0 <small>BYN</small></span></div>
+              <p>С апельсином и мёдом — спасает в ноябре.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Лимонад «Тархун»</h3><span class="dots" aria-hidden="true"></span><span class="price">4,5 <small>BYN</small></span></div>
+              <p>Домашний, с эстрагоном и лаймом. Летом — вне конкуренции.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Холодный брю <span class="tag">хит</span></h3><span class="dots" aria-hidden="true"></span><span class="price">6,0 <small>BYN</small></span></div>
+              <p>Двенадцать часов настаивания, подаём со льдом.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Круассан миндальный</h3><span class="dots" aria-hidden="true"></span><span class="price">4,0 <small>BYN</small></span></div>
+              <p>Печём утром, разбирают к полудню. Приходите раньше.</p>
+            </article>
+          </div>
+          <p class="menu-note">Безлактозное и овсяное молоко — всегда в наличии</p>
+        </div>
+
+        <div class="menu-panel" id="panel-beans" role="tabpanel" aria-labelledby="tab-beans" tabindex="0" hidden>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <div class="menu-line"><h3>Эфиопия Гуджи</h3><span class="dots" aria-hidden="true"></span><span class="price">24 <small>BYN / 250 г</small></span></div>
+              <p>Светлая обжарка. Абрикос, жасмин, чёрный чай. Для фильтра.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Колумбия Уила</h3><span class="dots" aria-hidden="true"></span><span class="price">21 <small>BYN / 250 г</small></span></div>
+              <p>Средняя. Карамель, красное яблоко, какао. Универсальная.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Бленд «Варка №1» <span class="tag">хит</span></h3><span class="dots" aria-hidden="true"></span><span class="price">18 <small>BYN / 250 г</small></span></div>
+              <p>Наш базовый: шоколад, орех, немного цитруса. Для эспрессо и гейзера.</p>
+            </article>
+            <article class="menu-item">
+              <div class="menu-line"><h3>Дрип-пакеты, 10 шт</h3><span class="dots" aria-hidden="true"></span><span class="price">26 <small>BYN</small></span></div>
+              <p>Для офиса и поездов. Залить кипятком — и всё.</p>
+            </article>
+          </div>
+          <p class="menu-note">На каждый пакет клеим дату обжарки и рецепт — чтобы дома получилось так же</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow">о нас</p>
+        <h2 id="about-title">Мы не про скорость.<br><em>Мы про вкус.</em></h2>
+        <p>
+          VARKA началась в 2016 году с роустера на три килограмма и упрямой идеи:
+          в Минске можно жарить кофе не хуже, чем в Копенгагене. Сегодня у нас две
+          кофейни и своя обжарочная — но принцип тот же.
+        </p>
+        <p>
+          Мы покупаем зерно у фермеров и кооперативов, пробуем каждую партию вслепую
+          и жарим небольшими лотами. Если лот не нравится — он не попадает в меню.
+          Без исключений и «ну это же дорого».
+        </p>
+        <ul class="values">
+          <li>Обжарка каждую среду — на полке всегда свежее</li>
+          <li>Молоко с местной фермы, не из тетрапака</li>
+          <li>Свой стакан — скидка и наша благодарность</li>
+          <li>Никаких сиропов в базовом меню</li>
+        </ul>
+      </div>
+
+      <div class="about-art reveal">
+        <figure class="about-photo">
+          <img class="about-img" src="img/about.jpg" alt="Бариста заваривает кофе в воронке V60" width="900" height="1050" loading="lazy">
+          <figcaption class="art-tag">кофейня · ул. Октябрьская</figcaption>
+          <span class="art-note">фильтр V60 · 3:00</span>
+        </figure>
+        <div class="about-quote">
+          <p>«Хороший кофе — это не про дорогое оборудование. Это про внимание к деталям, которое не видно.»</p>
+          <span>— команда VARKA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat"><b>10</b><span>лет на одном месте</span></div>
+        <div class="stat"><b>3</b><span>обжарки в неделю</span></div>
+        <div class="stat"><b>12</b><span>сортов в год</span></div>
+        <div class="stat"><b>2</b><span>кофейни в городе</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ROAST ================= -->
+  <section class="section roast" id="roast" aria-labelledby="roast-title">
+    <div class="container">
+      <header class="section-head section-head-light reveal">
+        <p class="eyebrow">обжарка</p>
+        <h2 id="roast-title">От зерна <em>до чашки</em></h2>
+        <p class="section-sub">Три шага, между которыми — месяцы переписки с фермерами и десятки испорченных чашек.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-num">01</span>
+          <h3>Зерно</h3>
+          <p>Отбираем микролоты в Эфиопии, Колумбии и Кении. Каждую партию пробуем вслепую: не хочется допить чашку — не берём.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">02</span>
+          <h3>Обжарка</h3>
+          <p>12–14 минут в барабане, отдельные профили для фильтра и эспрессо. Пишем кривую каждой партии, чтобы повторить результат.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">03</span>
+          <h3>Чашка</h3>
+          <p>18 грамм, 36 миллилитров, 28 секунд. Рецепт простой — но за ним стоят годы тренировок и весы на стойке.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= VIBE ================= -->
+  <section class="section vibe" id="vibe" aria-labelledby="vibe-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">атмосфера</p>
+        <h2 id="vibe-title">Здесь можно <em>не спешить</em></h2>
+        <p class="section-sub">Дубовый бар, тёплый свет, розетки у каждого стола и никто не выгоняет с ноутбуком.</p>
+      </header>
+
+      <div class="vibe-grid">
+        <figure class="vibe-card reveal">
+          <div class="vibe-art">
+            <img src="img/vibe-1.jpg" alt="Светлый зал кофейни: бар, столики и растения" width="1100" height="690" loading="lazy">
+          </div>
+          <figcaption><span class="vibe-index">01</span> Светлый зал</figcaption>
+        </figure>
+        <figure class="vibe-card reveal">
+          <div class="vibe-art">
+            <img src="img/vibe-2.jpg" alt="Свежеобжаренные кофейные зёрна крупным планом" width="1100" height="690" loading="lazy">
+          </div>
+          <figcaption><span class="vibe-index">02</span> Полка с зерном</figcaption>
+        </figure>
+        <figure class="vibe-card reveal">
+          <div class="vibe-art">
+            <img src="img/vibe-3.jpg" alt="Круассаны на витрине, присыпанные сахарной пудрой" width="1100" height="690" loading="lazy">
+          </div>
+          <figcaption><span class="vibe-index">03</span> Витрина с выпечкой</figcaption>
+        </figure>
+        <figure class="vibe-card reveal">
+          <div class="vibe-art">
+            <img src="img/vibe-4.jpg" alt="Столик у окна с френч-прессом и чашкой" width="1100" height="690" loading="lazy">
+          </div>
+          <figcaption><span class="vibe-index">04</span> Угол у окна</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+    <div class="container">
+      <header class="section-head reveal">
+        <p class="eyebrow">отзывы</p>
+        <h2 id="reviews-title">Что говорят <em>гости</em></h2>
+      </header>
+
+      <div class="reviews-grid">
+        <blockquote class="review reveal">
+          <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+          <p>Лучший флэт уайт в городе. Прихожу каждое утро, и бариста уже знает мой заказ раньше, чем я успеваю поздороваться.</p>
+          <footer><b>Анна</b><span>дизайнер, гость с 2019 года</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+          <p>Забрал зерно домой — теперь варю не хуже, чем в кофейне. Отдельное спасибо за рецепт, наклеенный на пакет.</p>
+          <footer><b>Дмитрий</b><span>разработчик, варит на гейзере</span></footer>
+        </blockquote>
+        <blockquote class="review reveal">
+          <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+          <p>Тихо, светло, есть розетки. Просидела три часа с ноутбуком — никто не посмотрел косо. Редкость.</p>
+          <footer><b>Мария</b><span>переводчица, работает из кофейни</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTS + BOOKING ================= -->
+  <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+    <div class="container contacts-grid">
+      <div class="contacts-info reveal">
+        <p class="eyebrow">контакты</p>
+        <h2 id="contacts-title">Заходите <em>в гости</em></h2>
+        <p class="contacts-lead">Мы на Октябрьской, вход со двора — ищите вывеску с зерном и пар из-под двери.</p>
+
+        <dl class="info-list">
+          <div>
+            <dt>Адрес</dt>
+            <dd>Минск, ул. Октябрьская, 16<br><span class="muted">вход со двора, второй этаж</span></dd>
+          </div>
+          <div>
+            <dt>Часы</dt>
+            <dd>Пн–Пт 8:00–22:00<br>Сб–Вс 9:00–23:00</dd>
+          </div>
+          <div>
+            <dt>Телефон</dt>
+            <dd><a href="tel:+375291234567">+375 29 123-45-67</a></dd>
+          </div>
+          <div>
+            <dt>Почта</dt>
+            <dd><a href="mailto:hello@varka.by">hello@varka.by</a></dd>
+          </div>
+        </dl>
+
+        <div class="socials">
+          <a href="#" class="social">Telegram</a>
+          <a href="#" class="social">Instagram</a>
+          <a href="#" class="social">Отзывы</a>
+        </div>
+      </div>
+
+      <div class="booking-card reveal" id="booking">
+        <h3>Забронировать стол</h3>
+        <p class="booking-sub">Оставьте контакты — перезвоним в течение 15 минут и всё подтвердим.</p>
+
+        <form class="booking-form" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+            <small class="error" data-error-for="name"></small>
+          </div>
+
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+375 29 000-00-00" required>
+            <small class="error" data-error-for="phone"></small>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Дата</label>
+              <input id="date" name="date" type="date" required>
+              <small class="error" data-error-for="date"></small>
+            </div>
+            <div class="field">
+              <label for="time">Время</label>
+              <select id="time" name="time" required>
+                <option value="">—</option>
+                <option>09:00</option><option>10:00</option><option>11:00</option>
+                <option>12:00</option><option>13:00</option><option>14:00</option>
+                <option>15:00</option><option>16:00</option><option>17:00</option>
+                <option>18:00</option><option>19:00</option><option>20:00</option>
+                <option>21:00</option>
+              </select>
+              <small class="error" data-error-for="time"></small>
+            </div>
+            <div class="field">
+              <label for="guests">Гостей</label>
+              <select id="guests" name="guests">
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option><option>6+</option>
+              </select>
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit">Отправить заявку</button>
+          <p class="form-legal">Нажимая кнопку, вы соглашаетесь на обработку данных. Мы не звоним без повода и не передаём номера третьим лицам.</p>
+        </form>
+
+        <div class="booking-success" id="bookingSuccess" hidden tabindex="-1">
+          <div class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48">
+              <circle cx="24" cy="24" r="23" fill="#c05f35"/>
+              <path d="M14 25l7 7 13-15" fill="none" stroke="#fbf5ec" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4>Стол забронирован</h4>
+          <p id="successText">Спасибо! Мы перезвоним, чтобы подтвердить.</p>
+          <button class="btn btn-ghost" type="button" id="resetBooking">Забронировать ещё</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="#top" aria-label="VARKA — в начало страницы">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <circle cx="20" cy="20" r="19" fill="#fbf5ec"/>
+            <ellipse cx="20" cy="20" rx="8" ry="11.5" transform="rotate(-28 20 20)" fill="#c05f35"/>
+            <path d="M20 8.6c-3.4 4.6-3.4 18 0 22.8" stroke="#fbf5ec" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text"><strong>VARKA</strong><em>coffee roasters</em></span>
+      </a>
+      <p>Обжарочная кофейня в Минске.<br>Варим с 2016 года.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Навигация в подвале">
+      <a href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#roast">Обжарка</a>
+      <a href="#vibe">Атмосфера</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="footer-meta">
+      <a href="tel:+375291234567">+375 29 123-45-67</a>
+      <a href="mailto:hello@varka.by">hello@varka.by</a>
+      <p>© <span id="year">2026</span> VARKA. Цены и наличие уточняйте у бариста.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
